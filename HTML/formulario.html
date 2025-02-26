@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Inicio</title>
+    </head>
+    <body>
+        <h1>Formulario</h1>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Información general</legend>
+                <div>
+                    <label for="">Nombres:</label>
+                    <input type="text" name="" placeholder="Ingrese su nombre completod" maxlength="60" value="Gerardo" required>
+                </div>
+                <div>
+                    <label for="">Contraseña</label>
+                    <input type="password" name="pwd" required>
+                </div>
+                <div>
+                    <label for="">Email</label>
+                    <input type="email" name="correo">
+                </div>
+                <div>
+                    <label for="">Edad:</label>
+                    <input type="number" name="edad" value="18" min="14" max="110">
+                </div>
+                <div>
+                    <label for="">Fecha de cumpleaños:</label>
+                    <input type="date" name="cumpleanios"><br>
+                    <input type="datetime-local" name="cumpleaniosDos">
+                </div>
+                <div>
+                    <label for="">Color favorito:</label>
+                    <input type="color" name="colorFav">
+                </div>
+                <div>
+                    <label for="">Archivo:</label>
+                    <input type="file" name="archivo" multiple accept=".pdf">
+                </div>
+                <div>
+                    <label for="">Hora:</label>
+                    <input type="time" name="hora">
+                </div>
+                <div>
+                    <label for="">Mes:</label>
+                    <input type="month" name="mes">
+                </div><div>
+                    <label for="">Semana:</label>
+                    <input type="week" name="semana">
+                </div>
+                <div>
+                    <label for="">Categoría:</label>
+                    <label>
+                        <input type="radio" name="catg" value="A">
+                        Categoría A
+                    </label>
+                    <label>
+                        <input type="radio" name="catg" value="B" checked>
+                        Categoría B
+                    </label>
+                    <label>
+                        <input type="radio" name="catg" value="C">
+                        Categoría C
+                    </label>
+                </div>
+                <div>
+                    <label for="">Pasatiempos:</label>
+                    <label><input type="checkbox" name="pasatiempoA">
+                        Jugar
+                    </label>
+                    <label><input type="checkbox" name="pasatiempoB">
+                        Comer
+                    </label>
+                    <label><input type="checkbox" name="pasatiempoC">
+                        Dormir
+                    </label>
+                    <label><input type="checkbox" name="pasatiempoD" checked>
+                        Todas las anteriores
+                    </label>
+                </div>
+                <div>
+                    <label for="">Ciudad:</label>
+                    <select name="ciudad">
+                        <option value="1">Tunja</option>
+                        <option value="2" selected>Duitama</option>
+                        <option value="3">Sogamoso</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Descripción:</label>
+                    <textarea name="desc" rows="3" cols="20"></textarea>
+                </div>
+            </fieldset>
+            <div>
+                <input type="button" value="Botón">
+                <input type="reset" value="Borrar">
+                <input type="submit" value="Enviar">
+                <br> <br>
+                <button type="button">Botón</button>
+                <button type="reset">Borrar</button>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </body>
+</html>
