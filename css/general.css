@@ -1,0 +1,159 @@
+*{
+    text-decoration:overline;
+}
+
+input[type=text]{
+    color: rgb(255, 0, 0);
+}
+
+input[type=email]{
+    color: rgb(0, 255, 255);
+}
+
+input[value]{
+    font-style: italic;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    font-weight: normal;
+    font-style: oblique;
+    
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-decoration-color: rgb(0, 0, 0);
+    text-decoration-style: dotted;
+    text-shadow: 0px 0px 20px #000000;
+    text-indent: 50px;
+
+    word-wrap: break-word;
+    word-spacing: 5px;
+    letter-spacing: 25px;
+
+    border-width: 10px;
+    border-color: rgb(145, 210, 153);
+    border-style:double;
+    border-radius: 50px;
+
+    border-left-color: rgb(223, 161, 197);
+    border-right-color: rgb(138, 152, 199);
+    border-top-width: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-width: 15px;
+    border-bottom-left-radius: 0px;
+}
+
+.bg{
+    border: 1px solid rgb(0,0,0);
+    margin: 20px;
+    margin: 20px 40px;
+    margin: 20px 40px 10px 30px;
+    /*
+    margin-top = margin-block-start;
+    margin-bottom = margin-block-end;
+    margin-left = margin-inline-start;   
+    margin-right = margin-inline-end;
+    */
+
+    padding: 32px;
+
+    width: 60vw;
+    height: 60vh;
+
+    background-color: rgb(157, 193, 99);
+    background-image: url('../Recursos/Fondo.jpg');
+    background-size: 90%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: -10px 15px 10px 7px #999999;
+}
+
+.boton{
+    width: 150px;
+    height: 80px;
+    background-color: rgb(89, 108, 54);
+    color:rgb(0, 0, 0);
+    transition-property: background-color, color, width;
+    transition-duration: 2s, 1s, 100ms;
+    transition-timing-function: linear;
+    transition-delay: 100ms;
+}
+
+.boton:hover{ /*Acción cuando el mouse esta sobre el elemento*/
+    width: 300px;
+    background-color:#000000;
+    color: rgb(255, 255, 255);
+}
+
+.pel1{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: rgba(152, 83, 33, 0.466);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    animation-name: animacion1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes animacion1{
+    from{
+        left: 0px;
+        background-color: rgba(152, 83, 33, 0.466);
+    }   
+    to{
+        left: 100vw; /*100% de la Pantalla*/
+        background-color: rgba(172, 255, 47, 0.467);
+    }
+}
+
+.pel2{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: rgba(152, 83, 33, 0.466);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    animation-name: animacion2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes animacion2{
+    0%{
+        border-radius: 100%;
+        left: 0px;
+        background-color: rgba(110, 33, 152, 0.466);
+    }
+    25%{
+        border-radius: 0px;
+        background-color: rgba(0, 213, 255, 0.466);
+        height: 200px;
+        top: 300px;
+    }
+    50%{
+        border-radius: 100%;
+        background-color: rgba(110, 33, 152, 0.466);
+        height: 80px;
+        top: 0px;
+        box-shadow: 1px 1px 5px 10px rgb(12, 239, 255);
+    }
+    75%{
+        border-radius: 0px;
+        background-color: rgba(0, 213, 255, 0.466);
+        height: 200px;
+        top: 300px;
+    }
+    100%{
+        border-radius: 100%;
+        left: 100vw; /*100% de la Pantalla*/
+        background-color: rgba(110, 33, 152, 0.466);
+    }
+}

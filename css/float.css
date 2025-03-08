@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.Circulo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.Circulo.c1{
+    background-color: #adff2f ;
+    background-image: url('../Recursos/Cara-Sonriente-Simple.png');
+    background-size: cover;
+}
+
+.Circulo.c2{
+    background-color: #2fff3d ;
+    background-image: url('../Recursos/Cara-Sonriente-Simple.png');
+    background-size: cover;
+}
+
+.Circulo.c3{
+    background-image: url('../Recursos/Cara-Sonriente-Simple.png');
+    background-size: cover;
+    background-color: #2fffe7 ;
+}
+.Circulo.c4{
+    background-image: url('../Recursos/Cara-Sonriente-Simple.png');
+    background-size: cover;
+    background-color: #2fc4ff ;
+}
+
+.float-content{
+    width: 80vw;
+    height: 180vh;
+    margin: 5vh auto;
+    border: 5px solid #000000;
+    position: relative;
+}
+
+.float-content .c1{
+    position: relative; /*MANTIENE SU POSICIÓN*/
+    top: 0px;
+    /* bottom: 0px*/
+    left: 100px;
+    /* right: 0px*/
+}
+
+.float-content .c2{
+    position: absolute; /*DESACOPLE ADECUADO AL FLOAT PRINCIPAL*/
+    bottom: 0px;
+    right: 0px;
+    
+}
+
+.float-content .c3{
+    position: fixed; /*ACOMPAÑA EL SCROLL DEL USUSARIO*/
+    top: 0px;
+    left: 0px;
+}
+
+.float-content .c4{
+    position: sticky; /*ACOMPAÑA EL SCROLL DEL USUSARIO CUANDO TOCA EL BORDE*/
+    top: 0px;
+    left: 0px;
+}

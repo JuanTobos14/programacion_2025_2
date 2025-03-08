@@ -1,0 +1,61 @@
+.grid-conted {
+    width: 60vw;
+    height: 80vh;
+    margin: auto;
+    margin-bottom: 10vh;
+    border: 5px solid #000000;
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 2fr 1fr;*/
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "nav header header header"
+    "nav section section div"
+    "nav section section ."
+    "nav section section footer";
+}
+
+.grid-conted header {
+    grid-area: header;
+    background-color: #ff0000;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Recursos/dados.png');
+    background-size: contain;
+}
+
+.grid-conted nav {
+    grid-area: nav;
+    background-color: #0800ff;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Recursos/dados.png');
+    background-size: contain;
+}
+
+.grid-conted section {
+    grid-area: section;
+    background-color: #00ffee;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Recursos/dados.png');
+    background-size: contain;
+}
+
+.grid-conted div {
+    grid-area: div;
+    background-color: #00ff51;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Recursos/dados.png');
+    background-size: contain;
+}
+
+.grid-conted footer {
+    grid-area: footer;
+    background-color: #b7ff00;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Recursos/dados.png');
+    background-size: contain;
+}
